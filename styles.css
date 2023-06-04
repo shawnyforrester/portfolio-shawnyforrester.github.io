@@ -1,0 +1,156 @@
+/* Adjust the margins of the body so that the main page is abutting
+the edges*/
+.body{
+    margin: 0px;  
+  }
+
+
+/*Add style the drop-down menu*/
+/* The container <div> - needed to position the dropdown content */
+.menu-bar {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {     
+    border: none;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .menu-drop-content {
+    display: none;
+    position: absolute;    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .menu-drop-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  /* .menu-drop-content a:hover {background-color: #f1f1f1} */
+  
+  /* Show the dropdown menu on hover */
+  .menu-bar:hover .menu-drop-content {
+    display: block;
+  }
+  
+
+/*Add styles to the header*/
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/*Add styles to the navigation*/
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+
+}
+
+.right-side .nav-link-wrapper{
+    display:inline;
+    margin-left: 20px;
+
+}
+
+.left-side .nav-link-wrapper {
+    margin-right: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+    
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper a:hover{
+    color: #000;
+}
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    grid-gap: 40px;
+  
+}
+
+.portfolio-item-wrapper{    
+    display:block;
+    position: relative;
+    height: 350px;
+    border-radius: 5px;/*This will make the corners rounded*/
+    overflow: hidden;/*This will hide the overflow of the image*/
+    
+}
+
+.portfolio-img-background{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    
+    
+    
+    height: 100%;
+    
+    color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+/*Add an event listner*/
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+    
+
+}
+.img-text-wrapper:hover .subtitle{
+    
+    font-weight: 600;
+    color: seagreen
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
